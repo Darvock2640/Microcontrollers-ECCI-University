@@ -1,4 +1,4 @@
-# Microchip PIC microcontrollers course at ECCI University by ALejandro Beltrán 
+# Microchip PIC microcontrollers course at ECCI University by Alejandro Beltrán 
 
 This is the repository of the microcontrollers course with C language on PIC18F452 at ECCI university. This course belongs to the electronic engineering degree program and cover topics like:
 ## First module:
