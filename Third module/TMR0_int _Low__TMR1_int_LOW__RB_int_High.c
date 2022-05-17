@@ -76,7 +76,7 @@ void conf_int(void) {
     RBIP = 1;
 }
 
-void interrupt HighIsr(void) { //0x08
+void __interrupt(high_priority) HighIsr(void) { //0x08
     unsigned char temp = 0;
     if (RBIF == 1) {
         temp = PORTB;
@@ -101,7 +101,7 @@ void interrupt HighIsr(void) { //0x08
 
 }
 
-void interrupt low_priority LowIsr(void) //0x18
+void __interrupt(low_priority) LowIsr(void) //0x18
 {
     if (TMR0IF == 1) {
         TMR0IF = 0;
